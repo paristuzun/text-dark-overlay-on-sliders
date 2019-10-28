@@ -19,18 +19,28 @@
 
 <body>
   <header class="section_quick_link hero">
-	<div class="hero" data-arrows="true" data-autoplay="true" data-items="5" data-items-sm="3" data-items-xs="1">
+	<div class="hero" data-arrows="true" data-autoplay="true">
 	  <!--.hero-slider-->
 	  <div class="hero-slider">
-         <img alt="" class="img-responsive cover" src="images/image-1.jpg">
+         <img alt="Mars" class="img-responsive cover" src="images/mars-1.jpg">
+         <div class="header-content text-white position-absolute col-lg-4">
+            <h1>Be part of the <span class="d-block font-weight-bold">Lunar XPerience</span></h1>  
+            <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Tour Our Ships</a>
+         </div>
 	  </div>
 	  <!--.hero-slider-->
 	  <div class="hero-slider">
-          <img alt="" class="img-responsive cover" src="images/image-2.jpg">
+          <img alt="Moon" class="img-responsive cover" src="images/mars-2.jpg">
+          <div class="header-content text-white position-absolute col-lg-4">
+                <h1 class="font-weight-bold margin-0">Mars 2</h1>  
+          </div>
 	  </div>
 	  <!--.hero-slider-->
 	  <div class="hero-slider">
-          <img alt="" class="img-responsive cover" src="images/image-3.jpg">
+          <img alt="Space Travel" class="img-responsive cover" src="images/mars-3.jpg">
+          <div class="header-content text-white position-absolute col-lg-4">
+                <h1 class="font-weight-bold margin-0">Mars 3</h1>  
+          </div>
 	  </div>
 	</div><!--.hero-->
   </header>	
@@ -42,28 +52,37 @@
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
+        autoplay: false,
+        draggable: false,
 		responsive: [
 	    {
 		breakpoint: 1024,
 		settings: {
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		infinite: true,
+        infinite: true,
 		dots: false
+		          }
+        },
+        {
+		breakpoint: 768,
+		settings: {
+        draggable: true,
 		          }
 		},
 		{
 		breakpoint: 600,
 		settings: {
-		slidesToShow: 1,
+        slidesToShow: 1,
+        draggable: true,
 		slidesToScroll: 1
 			      }
 		},
 		{
 		breakpoint: 480,
 		settings: {
-		slidesToShow: 1,
+        slidesToShow: 1,
+        draggable: true,
 		slidesToScroll: 1
 		          }
 		}
